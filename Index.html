@@ -107,6 +107,11 @@
               <a href="#culinary">Culinary<span class="underline"></span></a>
             </li>
             <li>
+              <a href="#reservation"
+                >Reservation<span class="underline"></span
+              ></a>
+            </li>
+            <li>
               <a href="#contact">Contact<span class="underline"></span></a>
             </li>
           </ul>
@@ -252,7 +257,7 @@
     </div>
     <!--End fixed-image-->
 
-    <!--start About Us-->
+    <!--start Culinary-->
     <div id="culinary" class="reservation">
       <div class="text">
         <h2>Culinary</h2>
@@ -279,7 +284,102 @@
         </div>
       </div>
     </div>
-    <!--End About Us-->
+    <!--End Culinary-->
+
+    <!--Start fixed-image-->
+    <div class="fixed-image1">
+      <div class="text">
+        <h2 class="dark-blue">Reserve a</h2>
+        <br />
+        <h3>Table</h3>
+      </div>
+    </div>
+    <!--End fixed-image-->
+
+    <!--start Reservation-->
+    <div id="reservation" class="reservation">
+      <div class="text">
+        <h2>Reservation</h2>
+        <br />
+
+        <p>
+          We promise an intimate and relaxed dining experience that offers
+          something different to local and foreign patrons and ensures you enjoy
+          a memorable food experience every time.
+        </p>
+ 
+        <div id="reserve" class="button">
+          <button onclick="openReservationForm()">Reservation</button>
+        </div>
+
+        <!-- Reservation Modal -->
+        <div id="reservationModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeReservationForm()">&times;</span>
+            <h3 style="color: goldenrod">Reserve Your Table</h3>
+            <form id="reservationForm">
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-row">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-row">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-row">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required />
+              </div>
+              <div class="form-row">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" required />
+              </div>
+              <div class="form-row">
+                <label for="people">No of People</label>
+                <input
+                  type="number"
+                  id="people"
+                  name="people"
+                  min="1"
+                  required
+                />
+              </div>
+
+              <button type="submit">Reserve</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <div class="image image1">
+          <img
+            src="reservetable.jpg"
+            width="390"
+            height="385"
+            alt="Table Photo"
+          />
+        </div>
+        <div class="image image2">
+          <img
+            src="table.jpg"
+            width="390"
+            height="385"
+            alt="Table with People Photo"
+          />
+        </div>
+      </div>
+    </div>
+    <!--End Reservation-->
+
     <!--Start Contact Us-->
     <div id="contact" class="contact">
       <div class="text">
