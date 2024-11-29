@@ -80,7 +80,7 @@ document
       time: formData.get('time'),
       location: formData.get('location'),
       people: formData.get('people'),
-      reservationNumber: Math.floor(10000 + Math.random() * 90000), // Generate 5-digit number
+      reservationNumber: Math.floor(10000 + Math.random() * 90000), 
     };
 
     // Data for EmailJS

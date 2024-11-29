@@ -683,6 +683,13 @@ footer .newsletter i,
 /*Start Home Page*/
 
 /*Start Header*/
+.logo img {
+  border-radius: 50%; 
+  width: 70px;
+  height: 70px; 
+  object-fit: cover; 
+  border: 3px solid #a96700; 
+}
 header {
   height: calc(100vh - 22px);
   background-size: cover;
